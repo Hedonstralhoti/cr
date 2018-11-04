@@ -2,11 +2,11 @@
 <?php
 class Contato {
 
-	private $pdo;
+	private $pdo; 
 
-	public function __construct() {
-
-		$this->pdo = new PDO("mysql:dbname=cadastro;localhost","root", "");
+	public function conecta(){
+		
+		$this->pdo = Conexao::getInstance();
 	}
 
 	public function adicionar($nome){

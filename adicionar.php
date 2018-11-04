@@ -1,9 +1,20 @@
-<h1>Adicionar Nome</h1>
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+<h1>Adicionar Pessoa</h1>
+
 <form method="POST" action="adicionar_enviar.php">
-	Nome:<br><br>
-	<input type="text" name="nome">
-	<br><br>
-	<input type="submit" name="adicionar" value="Adicionar">
+	
+<div class="tabela">
+	<div class="FormularioInput">
+	    NOME: <br>
+	    <input type="text" id="nome" name="nome">
+	</div>
+
+	<br>
+
+	<input class="enviar" type="submit" name="adicionar" value="Adicionar">
+	
+</div>	
 </form>
 
 <?php
